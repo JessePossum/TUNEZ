@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const tracklist = document.getElementById("tracklist");
     const nextButton = document.getElementById("next");
 
-    const tracks = ['fiya.mp3', 'fallin.mp3', 'GenuineCharlie.mp3', 'Have it your way.mp3', 'ANYTHING 4 U.mp3'];
+    const tracks = ['Fiya.mp3', 'Realist.mp3','Fallin.mp3', 'GenuineCharlie.mp3', 'Have it your way.mp3', 'ANYTHING 4 U.mp3'];
     let currentTrackIndex = 0;
 
     tracks.forEach((track, index) => {
@@ -164,12 +164,12 @@ function createCloud() {
     cloud.textContent = '☁️'; // Cloud emoji
     cloud.style.position = 'fixed';
     cloud.style.top = Math.random() * window.innerHeight + 'px'; // Random vertical position
-    cloud.style.left = '-200px'; // Start 200px to the left of the page
-    cloud.style.fontSize = Math.random() * 200 + 8 + 'px'; // Random size
+    cloud.style.left = '-500px'; // Start 200px to the left of the page
+    cloud.style.fontSize = Math.random() * 500 + 8 + 'px'; // Random size
+    cloud.style.lineHeight = 0; // Make sure the clouds are vertically centered
     cloud.style.animationDuration = Math.random() * 60 + 8 + 's'; // Random move duration
     cloud.style.animationTimingFunction = 'ease-in-out';
     cloud.style.animationName = 'cloudMove';
-    cloud.style.animationIterationCount = 'infinite'; // Make the animation repeat indefinitely
     document.body.appendChild(cloud);
 
     // Remove the cloud once the animation is done
@@ -179,7 +179,7 @@ function createCloud() {
 }
 
 // Create a new cloud every 2 seconds
-setInterval(createCloud, 800);
+setInterval(createCloud, 1000);
 
 // CSS for the moving animation
 const styleCloud = document.createElement('style');

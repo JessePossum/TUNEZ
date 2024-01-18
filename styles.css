@@ -55,7 +55,6 @@ body {
     font-weight: bolder;
     font-variant: small-caps;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073;
-    pointer-events: none;
     line-height: 60px;
 }
 
@@ -105,7 +104,7 @@ li {
 
 li:hover {
     color: hwb(216 67% 4%); /* Change the color to red */
-    font-size:20px;
+    font-size: 20px;
     line-height: 30px;
     font-weight: bolder;
     font-variant: small-caps;

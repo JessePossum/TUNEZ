@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const tracklist = document.getElementById("tracklist");
     const nextButton = document.getElementById("next");
 
-    const tracks = ['fiya.mp3', 'fallin.mp3', 'GenuineCharlie.mp3', 'Have it your way.mp3', 'ANYTHING 4 U.mp3'];
+    const tracks = ['GenuineCharlie.mp3', 'Have it your way.mp3', 'ANYTHING 4 U.mp3', 'fiya.mp3', 'fallin.mp3'];
     let currentTrackIndex = 0;
 
     tracks.forEach((track, index) => {
